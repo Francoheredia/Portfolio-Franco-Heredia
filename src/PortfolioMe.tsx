@@ -1,9 +1,5 @@
-import {NavBar} from './components'
+import { NavBar } from './components';
 
 export const PortfolioMe = () => {
-    return (
-        
-            <NavBar/>
-        
-    )
-}
+	return <NavBar />;
+};
