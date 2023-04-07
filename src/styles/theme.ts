@@ -10,7 +10,10 @@ const breakpoints = {
 
 }
 
-const colors = {}
+const colors = {
+    textPrimary: '#CB4478',
+    textSecondary: '#8F9094'
+}
 
 
 const config: ThemeConfig = {
