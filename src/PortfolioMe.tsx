@@ -1,5 +1,5 @@
 import { Box, Container, Divider } from '@chakra-ui/react';
-import { AboutMe, Home, NavBar } from './components';
+import { AboutMe, Home, NavBar, Contact, Footer, Skills } from './components';
 
 export const PortfolioMe = () => {
 	return (
@@ -10,7 +10,10 @@ export const PortfolioMe = () => {
 				<Home />
 				<Divider mt={20} />
 				<AboutMe />
+				<Skills />
+				<Contact />
 			</Container>
+			<Footer />
 		</Box>
 	);
 };
