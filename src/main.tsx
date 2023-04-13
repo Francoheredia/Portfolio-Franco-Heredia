@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import theme from './styles/theme';
 import { PortfolioMe } from './PortfolioMe';
+import { AnimatePresence } from 'framer-motion';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<ChakraProvider theme={theme}>
-			<ColorModeScript initialColorMode={theme.config.initialColorMode} />
+			<AnimatePresence initial={true}>
+				<ColorModeScript initialColorMode={theme.config.initialColorMode} />
+			</AnimatePresence>
 			<PortfolioMe />
 		</ChakraProvider>
 	</React.StrictMode>,

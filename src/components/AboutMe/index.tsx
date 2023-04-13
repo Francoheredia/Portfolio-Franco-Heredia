@@ -1,8 +1,23 @@
-import { Wrap, Text, Heading, Image, Box, Stack } from '@chakra-ui/react';
+import {
+	Wrap,
+	Text,
+	Heading,
+	Image,
+	Box,
+	Stack,
+	Center,
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
+const WrapMotion = motion(Wrap);
 
 export const AboutMe = () => {
 	return (
-		<Wrap align='center'>
+		<WrapMotion
+			align='center'
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1.4 }}>
 			<Box width={['100%', '100%', '100%', '53%', '50%']}>
 				<Heading>👨‍💻 About Me</Heading>
 				<Stack spacing={7} mt={7} w='90%'>
@@ -32,15 +47,19 @@ export const AboutMe = () => {
 				</Stack>
 			</Box>
 			<Box width={['100%', '100%', '100%', '38%', '43%']}>
-				<Image
-					width='full'
-					height='auto'
-					mt={5}
-					borderRadius='full'
-					boxShadow='lg'
-					src='https://i.ibb.co/C79SWcX/adssajksdajd-copia-2.jpg'
-				/>
+				<Center>
+					<Image
+						width='full'
+						height='auto'
+						mt={5}
+						boxSize={{ sm: '200px', md: '400px', lg: '500px' }}
+						borderRadius='full'
+						boxShadow='lg'
+						objectFit='cover'
+						src='https://i.ibb.co/C79SWcX/adssajksdajd-copia-2.jpg'
+					/>
+				</Center>
 			</Box>
-		</Wrap>
+		</WrapMotion>
 	);
 };

@@ -9,6 +9,7 @@ export const NavBar = () => {
 				justifyContent='space-between'
 				alignItems='center'
 				w='100%'
+				h='70px'
 				py={2}
 				px={[2, 2, 3, 5, 5]}>
 				<Logo />

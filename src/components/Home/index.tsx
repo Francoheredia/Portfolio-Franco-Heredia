@@ -7,12 +7,19 @@ import {
 	Button,
 	Image,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 
+const BoxMotion = motion(Box);
+
 export const Home = () => {
 	return (
-		<Box mt={20}>
+		<BoxMotion
+			mt={20}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 2 }}>
 			<Wrap align='center' h='auto'>
 				<Box textAlign='left' width={['100%', '100%', '100%', '53%', '55%']}>
 					<Text
@@ -21,7 +28,7 @@ export const Home = () => {
 						fontSize={['20px', '20px', '23px', '25px']}>
 						Hey there! , I'm...
 					</Text>
-					<Heading fontSize={['40px', '40px', '55px']}>
+					<Heading fontSize={['40px', '40px', '55px', '60px']}>
 						Franco Falcon Heredia
 					</Heading>
 					<Text mt={2} fontSize={['20px', '25px', '30px']}>
@@ -55,6 +62,6 @@ export const Home = () => {
 					/>
 				</Box>
 			</Wrap>
-		</Box>
+		</BoxMotion>
 	);
 };

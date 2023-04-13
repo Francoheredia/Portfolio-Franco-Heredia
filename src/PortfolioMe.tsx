@@ -1,5 +1,13 @@
-import { Box, Container, Divider } from '@chakra-ui/react';
-import { AboutMe, Home, NavBar, Contact, Footer, Skills } from './components';
+import { Box, Container, Divider, SimpleGrid } from '@chakra-ui/react';
+import {
+	AboutMe,
+	Home,
+	NavBar,
+	Contact,
+	Footer,
+	Skills,
+	Works,
+} from './components';
 
 export const PortfolioMe = () => {
 	return (
@@ -7,11 +15,14 @@ export const PortfolioMe = () => {
 			<NavBar />
 			<Divider />
 			<Container centerContent maxW='8xl'>
-				<Home />
-				<Divider mt={20} />
-				<AboutMe />
-				<Skills />
-				<Contact />
+				<SimpleGrid column={1} spacing={[50, 50, 160, 190, 185]} mt={70}>
+					<Home />
+					<Divider />
+					<AboutMe />
+					<Skills />
+					<Works />
+					<Contact />
+				</SimpleGrid>
 			</Container>
 			<Footer />
 		</Box>

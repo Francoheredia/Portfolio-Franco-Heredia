@@ -1,10 +1,12 @@
-import { Box, Image } from "@chakra-ui/react"
+import { HStack, Text, Icon } from '@chakra-ui/react';
 
+import { FaCode } from 'react-icons/fa';
 
 export const Logo = () => {
-    return (
-        <Box>
-            <Image borderRadius='full' boxSize='45px' alt='Franco Falcon Heredia' src='https://bit.ly/dan-abramov'/>
-        </Box>
-    )
-}
+	return (
+		<HStack align='center'>
+			<Icon as={FaCode} />
+			<Text> Franco</Text>
+		</HStack>
+	);
+};
