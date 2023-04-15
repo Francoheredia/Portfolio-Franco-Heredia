@@ -14,6 +14,7 @@ const WrapMotion = motion(Wrap);
 export const AboutMe = () => {
 	return (
 		<WrapMotion
+			id='about'
 			align='center'
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}

@@ -20,6 +20,7 @@ const BoxMotion = motion(Box);
 export const Skills = () => {
 	return (
 		<BoxMotion
+			id='skill'
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.4 }}>

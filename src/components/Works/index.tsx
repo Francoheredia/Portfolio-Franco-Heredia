@@ -7,6 +7,7 @@ export const Works = () => {
 	const BoxMotion = motion(Box);
 	return (
 		<BoxMotion
+			id='works'
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.4 }}>

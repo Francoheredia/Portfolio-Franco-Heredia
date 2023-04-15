@@ -4,7 +4,7 @@ import { AiOutlineFileText, AiFillMail } from 'react-icons/ai';
 
 export const Contact = () => {
 	return (
-		<Stack align='center' spacing={7} textAlign='center'>
+		<Stack id='contact' align='center' spacing={7} textAlign='center'>
 			<Heading fontSize={[40, 45, 45, 45, 50]}>Let's chat! </Heading>
 			<Text>
 				I'm currently specializing in Full Stack Development. <br /> Feel free
