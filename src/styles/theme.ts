@@ -1,5 +1,4 @@
-import { type ThemeConfig, extendTheme } from '@chakra-ui/react'
-
+import { extendTheme } from '@chakra-ui/react'
 
 const breakpoints = {
     sm: '30em', // 480px
@@ -10,18 +9,28 @@ const breakpoints = {
 
 }
 
+
+
 const colors = {
     textPrimary: '#CB4478',
     textSecondary: '#8F9094',
     backgroundBox: '#171923',
 }
 
+const styles = {
+    global:{
+      body: {
+        bg: 'dark'
+    }
+    }
+  };
 
 
 const theme = extendTheme({
  
     breakpoints,
     colors,
+    styles
  
 });
 
