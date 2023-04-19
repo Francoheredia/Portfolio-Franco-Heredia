@@ -17,20 +17,16 @@ const colors = {
     backgroundBox: '#171923',
 }
 
-const styles = {
-    global:{
-      body: {
-        bg: 'dark'
-    }
-    }
-  };
-
+const config = {
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
+}
 
 const theme = extendTheme({
  
     breakpoints,
     colors,
-    styles
+    config
  
 });
 
