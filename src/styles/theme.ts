@@ -17,16 +17,12 @@ const colors = {
 }
 
 
-const config: ThemeConfig = {
-    initialColorMode: "light",
-    useSystemColorMode: false,
-  }
-
 
 const theme = extendTheme({
+ 
     breakpoints,
     colors,
-    config
+ 
 });
 
 
