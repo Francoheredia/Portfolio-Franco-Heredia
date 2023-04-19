@@ -46,9 +46,27 @@ export const Home = () => {
 						<Text>🏙️ &nbsp; Currently based out of Mendoza Argentina.</Text>
 					</Stack>
 					<Wrap mt={10} flexDir='row' spacing={5}>
-						<Button leftIcon={<FaGithub />}>GitHub</Button>
-						<Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
-						<Button leftIcon={<FaMailBulk />}>Email</Button>
+						<Button
+							as='a'
+							href='https://github.com/Francoheredia'
+							target='_blank'
+							leftIcon={<FaGithub />}>
+							GitHub
+						</Button>
+						<Button
+							as='a'
+							href='https://www.linkedin.com/in/francoherediadev/'
+							target='_blank'
+							leftIcon={<FaLinkedin />}>
+							LinkedIn
+						</Button>
+						<Button
+							as='a'
+							href='mailto:francofalcondev@gmail.com'
+							target='_blank'
+							leftIcon={<FaMailBulk />}>
+							Email
+						</Button>
 					</Wrap>
 				</Box>
 				<Box width={['100%', '100%', '100%', '38%', '40%']}>

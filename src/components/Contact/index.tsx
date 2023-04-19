@@ -11,9 +11,26 @@ export const Contact = () => {
 				to get in touch and talk more about your projects.
 			</Text>
 			<HStack spacing={3}>
-				<Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
-				<Button leftIcon={<AiFillMail />}>Email</Button>
-				<Button leftIcon={<AiOutlineFileText />}>Resume</Button>
+				<Button
+					as='a'
+					href='https://www.linkedin.com/in/francoherediadev/'
+					target='_blank'
+					leftIcon={<FaLinkedin />}>
+					LinkedIn
+				</Button>
+				<Button
+					as='a'
+					href='mailto:francofalcondev@gmail.com'
+					target='_blank'
+					leftIcon={<AiFillMail />}>
+					Email
+				</Button>
+				<Button
+					as='a'
+					href='https://resume.io/r/57x5TrMME'
+					leftIcon={<AiOutlineFileText />}>
+					Resume
+				</Button>
 			</HStack>
 		</Stack>
 	);

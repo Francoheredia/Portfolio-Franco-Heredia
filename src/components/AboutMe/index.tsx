@@ -23,27 +23,31 @@ export const AboutMe = () => {
 				<Heading>👨‍💻 About Me</Heading>
 				<Stack spacing={7} mt={7} w='90%'>
 					<Text>
-						Hey there! My name is Ryan Le and I am a 2021 graduate of the
-						University of Nebraska-Lincoln with a Bachelor of Science degree in
-						Software Engineering - minor in Mathematics.
+						Hey there! My name is Franco and I am a self-taught programmer,
+						graduated in 2021 from the Soyhenry bootcamp.
 					</Text>
 					<Text>
-						I am a Vietnamese-American front-end developer originally from Sioux
-						Falls, South Dakota. Currently, I am based out of the New York City
-						area. I primarily work with web-based technologies such as React.js,
-						TypeScript, JavaScript, Node.js, and Tailwind CSS, among other
-						things.
+						I am a Argentine Full stack developer, currently living in Mendoza
+						City. I work as technologies such as React.js , Typescript , Node.js
+						, Nest.js , Chakra Ui , Tailwind Css, Mongo Db database and SQL
+						among other things.
 					</Text>
 					<Text>
-						I got my start in the world of software engineering at the young age
-						of 11 when I was invited to join Re-Logic as a Beta Tester for the
-						hit indie game, Terraria.
+						I started in the programming world in mid 2019. my first steps were
+						in Pseint. Then I was part of a group of self-taught students where
+						we followed a roadmap to become web developers.
 					</Text>
 					<Text>
-						Aside from my work as a software engineer, I spend my free time
-						biking around the city, catching up on video game releases from over
-						the years, and traveling the US. It's my personal goal to visit each
-						one of the fifty states, and I'm about halfway there so far.
+						My work cycle began as a Teaching Assistant at soyhenry where I
+						supported students in their bootcamp process, then I had the
+						opportunity to work in Kuna a company dedicated to monitoring rice
+						fields, where I worked in the mobile area with React Native. After
+						that I was in some projects as a freelancer with React and Node.
+						Currently I'm working as a Backend tutor in the CoderHouse platform.
+					</Text>
+					<Text>
+						Apart from my work, I am passionate about soccer ⚽. I also love
+						biology and astrology 🌌.
 					</Text>
 				</Stack>
 			</Box>

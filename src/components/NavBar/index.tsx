@@ -18,12 +18,7 @@ import { MdComputer } from 'react-icons/md';
 
 export const NavBar = () => {
 	return (
-		<Flex
-			position='fixed'
-			w='100%'
-			h='70px'
-			backgroundColor='backgroundBox'
-			zIndex={222}>
+		<Flex w='100%' h='70px'>
 			<Flex
 				justifyContent='space-between'
 				alignItems='center'
