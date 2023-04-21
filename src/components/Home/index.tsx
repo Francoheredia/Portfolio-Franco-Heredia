@@ -16,6 +16,7 @@ const BoxMotion = motion(Box);
 export const Home = () => {
 	return (
 		<BoxMotion
+			id='home'
 			mt={20}
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}

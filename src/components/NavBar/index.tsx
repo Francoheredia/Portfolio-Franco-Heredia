@@ -1,7 +1,6 @@
 import {
 	Button,
 	Flex,
-	Link,
 	IconButton,
 	Menu,
 	MenuList,
@@ -13,12 +12,17 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { AiFillHome, AiFillThunderbolt } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { MdComputer } from 'react-icons/md';
-
-// import { Link as Linked } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export const NavBar = () => {
 	return (
-		<Flex w='100%' h='70px'>
+		<Flex
+			w='100%'
+			h='70px'
+			position='fixed'
+			zIndex={222}
+			bg='backgroundBox'
+			borderBottomWidth='1px'>
 			<Flex
 				justifyContent='space-between'
 				alignItems='center'
@@ -28,39 +32,100 @@ export const NavBar = () => {
 				px={[2, 2, 3, 5, 5]}>
 				<Logo />
 				<Flex>
-					<Flex display={['none', 'none', 'flex', 'flex', 'flex']}>
-						<Button mx={2} variant='link'>
-							<Link>Home</Link>
-						</Button>
-						<Button mx={2} variant='link'>
-							<Link>About</Link>
-						</Button>
-						<Button mx={2} variant='link'>
-							<Link>Works</Link>
-						</Button>
-						<Button mx={2} variant='link'>
-							<Link>@ Contact</Link>
-						</Button>
+					<Flex display={['none', 'none', 'flex', 'flex', 'flex']} gap={3}>
+						<Link
+							to='home'
+							spy={true}
+							smooth={true}
+							duration={700}
+							offset={-100}>
+							<Button variant='ghost' leftIcon={<AiFillHome />}>
+								Home{' '}
+							</Button>
+						</Link>
+						<Link
+							to='about'
+							spy={true}
+							smooth={true}
+							duration={700}
+							offset={-100}>
+							<Button variant='ghost' leftIcon={<BsFillPersonFill />}>
+								About
+							</Button>
+						</Link>
+						<Link
+							to='skill'
+							spy={true}
+							smooth={true}
+							duration={700}
+							offset={-100}>
+							<Button variant='ghost' leftIcon={<AiFillThunderbolt />}>
+								Skill
+							</Button>
+						</Link>
+						<Link
+							to='works'
+							spy={true}
+							smooth={true}
+							duration={700}
+							offset={-100}>
+							<Button variant='ghost' leftIcon={<MdComputer />}>
+								Works
+							</Button>
+						</Link>
+						<Link
+							to='contact'
+							spy={true}
+							smooth={true}
+							duration={700}
+							offset={-100}>
+							<Button variant='ghost'>@ Contact</Button>
+						</Link>
 					</Flex>
 					<Flex display={['flex', 'flex', 'none', 'none', 'none']}>
 						<Menu gutter={10}>
 							<MenuButton as={IconButton} icon={<HamburgerIcon />}></MenuButton>
 							<MenuList>
-								<MenuItem as='a' href='#' icon={<AiFillHome />}>
-									Home
-								</MenuItem>
-								<MenuItem as='a' href='#about' icon={<BsFillPersonFill />}>
-									About
-								</MenuItem>
-								<MenuItem as='a' href='#skill' icon={<AiFillThunderbolt />}>
-									Skill
-								</MenuItem>
-								<MenuItem as='a' href='#works' icon={<MdComputer />}>
-									Works
-								</MenuItem>
-								<MenuItem as='a' href='#contact'>
-									@ Contact
-								</MenuItem>
+								<Link
+									to='home'
+									spy={true}
+									smooth={true}
+									duration={700}
+									offset={-100}>
+									<MenuItem icon={<AiFillHome />}>Home </MenuItem>
+								</Link>
+								<Link
+									to='about'
+									spy={true}
+									smooth={true}
+									duration={700}
+									offset={-100}>
+									<MenuItem icon={<BsFillPersonFill />}>About</MenuItem>
+								</Link>
+								<Link
+									to='skill'
+									spy={true}
+									smooth={true}
+									duration={700}
+									offset={-100}>
+									<MenuItem icon={<AiFillThunderbolt />}>Skill</MenuItem>
+								</Link>
+								<Link
+									to='works'
+									spy={true}
+									smooth={true}
+									duration={700}
+									offset={-100}>
+									<MenuItem icon={<MdComputer />}>Works</MenuItem>
+								</Link>
+								<Link
+									to='contact'
+									spy={true}
+									smooth={true}
+									duration={700}
+									offset={-100}>
+									<MenuItem>@ Contact</MenuItem>
+								</Link>
 							</MenuList>
 						</Menu>
 					</Flex>

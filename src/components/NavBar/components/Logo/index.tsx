@@ -1,12 +1,13 @@
-import { HStack, Text, Icon } from '@chakra-ui/react';
-
-import { FaCode } from 'react-icons/fa';
+import { Box, Image } from '@chakra-ui/react';
 
 export const Logo = () => {
 	return (
-		<HStack align='center'>
-			<Icon as={FaCode} />
-			<Text> Franco</Text>
-		</HStack>
+		<Box>
+			<Image
+				src='https://i.ibb.co/VDKw24n/F-1-removebg-preview.png'
+				boxSize='95px'
+				alt='Franco Falcon Heredia'
+			/>
+		</Box>
 	);
 };

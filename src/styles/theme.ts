@@ -14,7 +14,7 @@ const breakpoints = {
 const colors = {
     textPrimary: '#CB4478',
     textSecondary: '#8F9094',
-    backgroundBox: '#171923',
+    backgroundBox: '#1A202C',
 }
 
 const config = {
